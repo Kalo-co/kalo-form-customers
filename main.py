@@ -12,7 +12,7 @@ class UserCreate(BaseModel):
     phone: str
     email: str
     company: str
-    size: str
+    size: int
     location: str
 
 class DeveloperCreate(BaseModel):

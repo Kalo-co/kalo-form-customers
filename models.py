@@ -18,7 +18,7 @@ class User(Base):
     phone = Column(String)
     email = Column(String, unique=True)
     company = Column(String)
-    size = Column(String)
+    size = Column(Integer)
     location = Column(String)
 
 class Developer(Base):
