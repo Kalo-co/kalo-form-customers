@@ -9,12 +9,14 @@ app = FastAPI()
 # Modelos Pydantic
 class UserCreate(BaseModel):
     full_name: str
+    phone: str
     email: str
     company: str
     location: str
 
 class DeveloperCreate(BaseModel):
     full_name: str
+    phone: str
     email: str
     linkedin: str
     age: int
